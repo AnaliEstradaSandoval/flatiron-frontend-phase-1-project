@@ -4,7 +4,7 @@ body{
 
 .card {
     max-width: 30%;
-    border: solid 1px;
+    border: solid 2px;
     margin: 20px;
     padding: 10px;
     background-color: rgba(3, 112, 3, 0.705);
