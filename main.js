@@ -2,10 +2,14 @@
 const selectVillager = document.querySelector(".villagers")
 const villagerContainer = document.querySelector(".villagerinfo-container")
 const button = document.querySelector(".button")
+const selectionH1 = document.querySelector(".selection-heading")
+const villagerDetailsContainer = document.querySelector(".villager-details-container")
+const villagerDetailsSection = document.querySelector(".villager-details-section")
+const welcomeSection = document.querySelector(".welcome")
 
 // Function Calls
 getVillager()
-
+welcomeMessage()
 
 // Event Listeners
 selectVillager.addEventListener("change", getVillagersInfo)
@@ -33,6 +37,15 @@ function villagerOptions(villagers) {
    }
 }
 
+// Welcome Section
+function welcomeMessage(){
+    villagerDetailsContainer.style.display = "none"
+    villagerContainer.style.display = "none"
+    welcomeSection.style.display = "grid"
+    selectionH1.textContent = ""
+}
+
+
 // Get Villager's Info
 function getVillagersInfo(e){
     const villager = e.target.value
@@ -44,28 +57,38 @@ function getVillagersInfo(e){
 
 // Render info on website
 function renderVillagersInfo(villagers){
+    welcomeSection.style.display = "none"
+    villagerDetailsContainer.style.display = "none"
+    villagerContainer.style.display = "grid"
+
     villagerContainer.replaceChildren()
 
-   renderVillagerCard(villagers)
+    renderVillagerCard(villagers)
 }
 
 function renderVillagerCard(villager){
     const villagerName = villager.name["name-USen"]
-
     const {id, ["image_uri"]: imageURI} = villager
 
     const cardDiv = document.createElement("div")
-
     cardDiv.classList.add("card")
+
+
    //event listener
    button.addEventListener("click", e => getVillagerDetails(e, id))
-  
+    villagerContainer.style.display = "grid"
+    villagerDetailsContainer.style.display = "grid"
+
+
     const image = document.createElement("img")
     image.src = imageURI
 
+    const villagerNameDiv = document.createElement("div")
+    villagerNameDiv.classList.add("villager-name")
     const title = document.createElement("h2")
     title.textContent = villagerName
 
+    villagerNameDiv.append(title)
     cardDiv.append(image, title, button)
     villagerContainer.append(cardDiv)
 }
@@ -86,12 +109,14 @@ function renderVillagerDetails(villager){
     console.log(villager)
 
     // Title Area
+    const iconImage = document.createElement("img")
+    iconImage.src = iconURI
     const title = document.createElement("p")
     title.textContent = `Villager Name: ${villagerName}`
     title.style.textDecoration = "underline"
     let titleArea = document.querySelector(".villager-title")
     titleArea.replaceChildren()
-    titleArea.append(title)
+    titleArea.append(title, iconImage)
 
     // Info Area
     const infoArea = document.querySelector(".villager-information")
