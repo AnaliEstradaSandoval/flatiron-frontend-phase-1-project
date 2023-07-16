@@ -2,30 +2,50 @@
 
 
 // Elements
-const selectVillager = document.querySelector("#villagers")
+const selectVillager = document.querySelector(".villagers")
 
 // Function Calls
 getVillager()
-// villagerOptions()
+
+// Event Listeners
+selectVillager.addEventListener("change", getVillagersInfo)
 
 // Fetching villager data
 function getVillager(){
     fetch("http://acnhapi.com/v1/villagers")
     .then(res => res.json())
-    .then(villagers => villagerOptions(Object.values(villagers)))
-    .catch()
+    .then(villagers => {
+        villagerOptions(Object.values(villagers))
+        // getVillagersId(Object.values(villagers))
+    })
+    .catch(error => alert(error))
 }
 
-//All villagers data
+// Dropdown Option
 function villagerOptions(villagers) {
    for (const villager of villagers){
     const option = document.createElement("option")
-    option.value = villager.name["name-USen"]
+    option.id = villager.id
+    option.value = villager["file-name"]
     option.textContent = villager.name["name-USen"]
     selectVillager.append(option)
-    console.log(villager.name["name-USen"])
+    // console.log(villager.name["name-USen"])
    }
 }
+
+function getVillagersInfo(e){
+    // debugger
+    const villager = e.target.value
+    console.log(villager)
+    fetch(`http://acnhapi.com/v1/villagers/${villager}`)
+    .then(res => res.json())
+    .then(info => console.log(info))
+    .catch(error => alert(error))
+}
+
+// function renderVillagersInfo(villagers){
+//     console.log(villagers)
+// }
 
 
 
