@@ -46,10 +46,18 @@ function getVillagersInfo(e){
 
 // Render info on website
 function renderVillagersInfo(villagers){
-    villagers.forEach(villager => {
-        renderVillagerCard(villager)
-    });
+   renderVillagerCard(villagers)
 }
 
+function renderVillagerCard(villager){
+    const villagerName = villager.name["name-USen"]
+    const {birthday, gender, hobby, personality, saying, species, 
+        ["catch-phrase"]: catchPhrase,
+        ["icon_uri"]: iconURI,
+        ["image_uri"]: imageURI
+    } = villager
+    console.log(villagerName)
+
+}
 
 
