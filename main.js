@@ -7,8 +7,11 @@ const selectVillager = document.querySelector(".villagers")
 // Function Calls
 getVillager()
 
+
 // Event Listeners
 selectVillager.addEventListener("change", getVillagersInfo)
+
+
 
 // Fetching villager data
 function getVillager(){
@@ -29,23 +32,24 @@ function villagerOptions(villagers) {
     option.value = villager["file-name"]
     option.textContent = villager.name["name-USen"]
     selectVillager.append(option)
-    // console.log(villager.name["name-USen"])
    }
 }
 
+// Get Villager's Info
 function getVillagersInfo(e){
-    // debugger
     const villager = e.target.value
-    console.log(villager)
     fetch(`http://acnhapi.com/v1/villagers/${villager}`)
     .then(res => res.json())
-    .then(info => console.log(info))
+    .then(info => renderVillagersInfo(info))
     .catch(error => alert(error))
 }
 
-// function renderVillagersInfo(villagers){
-//     console.log(villagers)
-// }
+// Render info on website
+function renderVillagersInfo(villagers){
+    villagers.forEach(villager => {
+        renderVillagerCard(villager)
+    });
+}
 
 
 
