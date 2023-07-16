@@ -6,6 +6,7 @@ const selectionH1 = document.querySelector(".selection-heading")
 const villagerDetailsContainer = document.querySelector(".villager-details-container")
 const villagerDetailsSection = document.querySelector(".villager-details-section")
 const welcomeSection = document.querySelector(".welcome")
+const mainTitle = document.querySelector(".main-title")
 
 // Function Calls
 getVillager()
@@ -13,7 +14,7 @@ welcomeMessage()
 
 // Event Listeners
 selectVillager.addEventListener("change", getVillagersInfo)
-
+mainTitle.addEventListener("click", welcomeMessage)
 
 // Fetching villager data
 function getVillager(){
