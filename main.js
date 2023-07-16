@@ -1,8 +1,6 @@
-// http://acnhapi.com/v1/villagers
-
-
 // Elements
 const selectVillager = document.querySelector(".villagers")
+const villagerContainer = document.querySelector(".villagerinfo-container")
 
 // Function Calls
 getVillager()
@@ -46,6 +44,7 @@ function getVillagersInfo(e){
 
 // Render info on website
 function renderVillagersInfo(villagers){
+    villagerContainer.replaceChildren()
    renderVillagerCard(villagers)
 }
 
@@ -56,8 +55,18 @@ function renderVillagerCard(villager){
         ["icon_uri"]: iconURI,
         ["image_uri"]: imageURI
     } = villager
-    console.log(villagerName)
+   const cardDiv = document.createElement("div")
+   cardDiv.classList.add("card")
 
+   //add event listener to card
+    const image = document.createElement("img")
+    image.src = imageURI
+
+    const title = document.createElement("h3")
+    title.textContent = villagerName
+
+    cardDiv.append(image, title)
+    villagerContainer.append(cardDiv)
 }
 
 
