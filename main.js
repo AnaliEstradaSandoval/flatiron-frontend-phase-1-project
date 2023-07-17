@@ -22,7 +22,6 @@ function getVillager(){
     .then(res => res.json())
     .then(villagers => {
         villagerOptions(Object.values(villagers))
-        // getVillagersId(Object.values(villagers))
     })
     .catch(error => alert(error))
 }
@@ -42,7 +41,7 @@ function villagerOptions(villagers) {
 function welcomeMessage(){
     villagerDetailsContainer.style.display = "none"
     villagerContainer.style.display = "none"
-    welcomeSection.style.display = "grid"
+    welcomeSection.style.display = "flex"
     selectionH1.textContent = ""
 }
 
@@ -60,7 +59,7 @@ function getVillagersInfo(e){
 function renderVillagersInfo(villagers){
     welcomeSection.style.display = "none"
     villagerDetailsContainer.style.display = "none"
-    villagerContainer.style.display = "grid"
+    villagerContainer.style.display = "flex"
 
     villagerContainer.replaceChildren()
 
@@ -77,9 +76,8 @@ function renderVillagerCard(villager){
 
    //event listener
    button.addEventListener("click", e => getVillagerDetails(e, id))
-    villagerContainer.style.display = "grid"
+    villagerContainer.style.display = "flex"
     villagerDetailsContainer.style.display = "grid"
-
 
     const image = document.createElement("img")
     image.src = imageURI
@@ -139,7 +137,6 @@ function renderVillagerDetails(villager){
     infoHobby.textContent = `Hobby: ${hobby}`
     infoCatchPhrase.textContent = `Catch-Phrase: ${catchPhrase}`
     infoSaying.textContent = `${villagerName} says: ${saying}`
-
     
     infoArea.replaceChildren()
     infoArea.append(infoTitle, infoBirthday, infoGender, infoSpecies, infoPersonality, infoHobby, infoCatchPhrase, infoSaying)
