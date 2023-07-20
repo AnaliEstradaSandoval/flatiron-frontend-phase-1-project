@@ -5,7 +5,7 @@ PHASE 1 PROJECT NOTES
 
 ## Requirements:
 
-1.[] HTML CSS JS
+1.[x] HTML CSS JS
 2.[x] Public API or db.json
 3.[x] 2 distint event listener
 4.[x] Iterating through arrays
