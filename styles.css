@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(0, 255, 102, 0.986);
+    background-color: rgba(22, 247, 60, 0.861);
 }
 
 .header {
@@ -7,12 +7,16 @@ body{
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 0 8px 20px black;
+    box-shadow: 0 8px 20px rgb(0, 0, 0);
+    border-style: groove;
+    
 }
 
 .main-title {
     cursor: pointer;
     font-size: 40px;
+    text-align: center;
+    text-shadow: 0 5px 10px rgb(2, 57, 14);
 }
 
 .welcome {
@@ -22,21 +26,24 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center; 
+    margin-top: 20px;
+    border-style:groove;
 
 } 
 
 .welcome-message {
-    background-color: rgb(3, 112, 3, 0.705);
+    background-color: rgb(186, 85, 85);
     display: grid;
     text-align: center;
     font-family: Courier New Font ;
     border-radius: 10%;
-    box-shadow: 0 10px 20px darkgreen;
+    box-shadow: 0 10px 20px rgba(3, 140, 3, 0.233);
     justify-content: center;
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
     width: 80%;
+    border-style: groove;
 }
 
 .villager-details-section {
@@ -45,6 +52,8 @@ body{
     margin: auto;
     border-radius: 20px;
     box-shadow: 0 10px 20px black;
+    border-style: groove;
+    margin-top: 20px;
 }
 
 .villagerinfo-container {
@@ -66,15 +75,20 @@ body{
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgb(7, 231, 15);
+    box-shadow: 0 8px 16px 0 rgb(186, 85, 85);
 }
 
+.main-title:hover {
+    box-shadow: 0 8px 16px 0 rgb(186, 85, 85);
+}
 .card img {
     width: 100%;
 }
 
 .villagerinfo-container {
     justify-content: center;
+    border-style: groove;
+    border-radius: 20px;
 }
 
 .footer {
@@ -86,25 +100,38 @@ body{
     font-size: 40px;
     margin-bottom: 1%;
     margin-top: 5%;
-    
+    border-style: groove;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px black;
 }
 
 #to-your {
     font-size: 30px;
+    border-style: groove;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px black;
 }
 
 #animal-crossing {
     font-size: 40px;
     margin-top: 1%;
+    border-style: groove;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px black;
 }
 
 #info-card {
     font-size: 30px;
-    margin-top: 1%;
+    margin-top: -1%;
+    margin-bottom: 1px;
+    border-style: groove;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px black;
 }
 
 #info {
     margin-bottom: 5%;
     text-align: center;
     margin: 30px;
+    text-decoration-line: underline;
 }

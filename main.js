@@ -92,6 +92,7 @@ function renderVillagerCard(villager){
     villagerContainer.append(cardDiv)
 }
 
+// Fetch Data
 function getVillagerDetails(e, id){
     fetch(`http://acnhapi.com/v1/villagers/${id}`)
     .then(res => res.json())
