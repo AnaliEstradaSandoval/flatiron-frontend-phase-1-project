@@ -6,6 +6,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px black;
 }
 
 .main-title {
@@ -16,17 +18,25 @@ body{
     font-size: larger;
     border-radius: 30px;
     box-shadow: 0 10px 20px black;
-    justify-content: center;
-}
+   }
+
 .welcome-message {
     display: grid;
     text-align: center;
     font-family: Courier New Font ;
 }
-.villager-container {
+
+.villager-details-section {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px black;
+}
+
+.villagerinfo-container {
+    border-radius: 20px;
+    box-shadow: 0 10px 20px black;
 }
 
 .card {
@@ -35,6 +45,13 @@ body{
     margin: 20px;
     padding: 10px;
     background-color: rgba(3, 112, 3, 0.705);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px black;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(7, 231, 15);
 }
 
 .card img {
@@ -49,3 +66,6 @@ body{
     justify-content: center;
 }
 
+.footer {
+    text-align: center;
+}

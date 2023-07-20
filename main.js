@@ -110,9 +110,9 @@ function renderVillagerDetails(villager){
     // Title Area
     const iconImage = document.createElement("img")
     iconImage.src = iconURI
-    const title = document.createElement("p")
+    const title = document.createElement("h3")
     title.textContent = `Villager Name: ${villagerName}`
-    title.style.textDecoration = "underline"
+    title.style.textDecoration = "bold"
     let titleArea = document.querySelector(".villager-title")
     titleArea.replaceChildren()
     titleArea.append(title, iconImage)
