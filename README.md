@@ -15,10 +15,11 @@
 
 <h2>Contributing</h2>
 
-<p>Pull requests are welcome.</p>
+<p>All are free to contribute to this app.</p>
 
 <h2>Authors and Acknowledment</h2>
 
+<p>I used a free API to create this app.<p>
 <p>API: <a>https://acnhapi.com/doc</a></p>
 
 <h2>License</h2>

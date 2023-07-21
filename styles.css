@@ -22,7 +22,9 @@ body{
     border-style: groove;
     border-radius: 20px;
     box-shadow: 0 10px 20px black;
-    background-color: yellow
+    background-color: yellow;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .welcome {
@@ -42,7 +44,6 @@ body{
     display: grid;
     text-align: center;
     font-family: Courier New Font ;
-    border-radius: 10%;
     box-shadow: 0 10px 20px rgba(3, 140, 3, 0.233);
     justify-content: center;
     align-items: center;
