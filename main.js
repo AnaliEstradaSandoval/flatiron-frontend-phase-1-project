@@ -73,7 +73,6 @@ function renderVillagerCard(villager){
     const cardDiv = document.createElement("div")
     cardDiv.classList.add("card")
 
-
    // Event Listener
    button.addEventListener("click", e => getVillagerDetails(e, id))
     villagerContainer.style.display = "flex"
