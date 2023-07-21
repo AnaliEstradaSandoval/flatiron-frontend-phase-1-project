@@ -114,6 +114,7 @@ body{
     border-style: groove;
     border-radius: 20px;
     box-shadow: 0 10px 20px black;
+    background-color: rgb(23, 210, 51);
 }
 
 #to-your {
@@ -122,6 +123,7 @@ body{
     border-style: groove;
     border-radius: 20px;
     box-shadow: 0 10px 20px black;
+    background-color: rgb(23, 210, 51);
 }
 
 #animal-crossing {
@@ -131,6 +133,7 @@ body{
     border-style: groove;
     border-radius: 20px;
     box-shadow: 0 10px 20px black;
+    background-color: rgb(23, 210, 51);
 }
 
 #info-card {
@@ -141,6 +144,7 @@ body{
     border-style: groove;
     border-radius: 20px;
     box-shadow: 0 10px 20px black;
+    background-color: rgb(23, 210, 51);
 }
 
 #info {
