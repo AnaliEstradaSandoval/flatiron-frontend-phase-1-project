@@ -9,15 +9,20 @@ body{
     border-radius: 20px;
     box-shadow: 0 8px 20px rgb(0, 0, 0);
     border-style: groove;
-    background-color: rgb(23, 210, 51);
+    background-color: rgb(14, 156, 35);
     
 }
 
 .main-title {
     cursor: pointer;
     font-size: 40px;
+    font-family: OCR A Std, monospace;
     text-align: center;
     text-shadow: 0 5px 10px rgb(2, 57, 14);
+    border-style: groove;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px black;
+    background-color: yellow
 }
 
 .welcome {
@@ -29,11 +34,11 @@ body{
     align-items: center; 
     margin-top: 20px;
     border-style:groove;
-    background-color: rgb(23, 210, 51);
+    background-color: rgb(14, 156, 35)
 } 
 
 .welcome-message {
-    background-color: rgb(186, 85, 85);
+    background-color: yellow;
     display: grid;
     text-align: center;
     font-family: Courier New Font ;
@@ -55,11 +60,15 @@ body{
     box-shadow: 0 10px 20px black;
     border-style: groove;
     margin-top: 20px;
+    background-color: rgb(23, 210, 51);
+    font-family: OCR A Std, monospace;
 }
 
 .villagerinfo-container {
     border-radius: 20px;
     box-shadow: 0 10px 20px black;
+    background-color: rgb(23, 210, 51);
+    font-family: OCR A Std, monospace;
 }
 
 .card {
@@ -99,6 +108,7 @@ body{
 
 #welcome-sign {
     font-size: 40px;
+    font-family: OCR A Std, monospace;
     margin-bottom: 1%;
     margin-top: 5%;
     border-style: groove;
@@ -108,6 +118,7 @@ body{
 
 #to-your {
     font-size: 30px;
+    font-family: OCR A Std, monospace;
     border-style: groove;
     border-radius: 20px;
     box-shadow: 0 10px 20px black;
@@ -115,6 +126,7 @@ body{
 
 #animal-crossing {
     font-size: 40px;
+    font-family: OCR A Std, monospace;
     margin-top: 1%;
     border-style: groove;
     border-radius: 20px;
@@ -123,6 +135,7 @@ body{
 
 #info-card {
     font-size: 30px;
+    font-family: OCR A Std, monospace;
     margin-top: -1%;
     margin-bottom: 1px;
     border-style: groove;
@@ -131,6 +144,7 @@ body{
 }
 
 #info {
+    font-family: OCR A Std, monospace;
     margin-bottom: 5%;
     text-align: center;
     margin: 30px;
