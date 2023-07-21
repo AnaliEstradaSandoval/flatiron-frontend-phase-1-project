@@ -117,7 +117,7 @@ function renderVillagerDetails(villager){
     titleArea.replaceChildren()
     titleArea.append(title, iconImage)
 
-    // Info Area
+    // Info Elements Area
     const infoArea = document.querySelector(".villager-information")
     const infoTitle = document.createElement("h3")
     const infoBirthday = document.createElement("p")
@@ -128,6 +128,7 @@ function renderVillagerDetails(villager){
     const infoSpecies = document.createElement("p")
     const infoCatchPhrase = document.createElement("p")
 
+    // Info Data Entry
     infoTitle.textContent = "Information"
     infoTitle.style.textDecoration = "bold"
     infoBirthday.textContent = `Date of birth: ${birthday}`
