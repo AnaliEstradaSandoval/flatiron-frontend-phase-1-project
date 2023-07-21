@@ -85,11 +85,11 @@ body{
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgb(186, 85, 85);
+    box-shadow: 0 8px 16px 8px yellow;
 }
 
 .main-title:hover {
-    box-shadow: 0 8px 16px 0 rgb(186, 85, 85);
+    box-shadow: 0 8px 16px 8px yellow;
 }
 .card img {
     width: 100%;
