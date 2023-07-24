@@ -7,7 +7,9 @@
 
 <h2>Installation</h2>
 
-<p>Go to: <a>https://github.com/AnaliEstradaSandoval/flatiron-frontend-phase-1-project.git</a></p>
+<p><strong>1.</strong> Navigate to GitHuh repository page: <a>https://github.com/AnaliEstradaSandoval/flatiron-frontend-phase-1-project.git</a></p>
+<p><strong>2.</strong> On the main repository page, click the green Code button.</p>
+<p><strong>3.</strong> In the menu that appears, clik <strong>Download ZIP</strong>.</p>
 
 <h2>Usage</h2>
 
@@ -15,7 +17,7 @@
 
 <h2>Contributing</h2>
 
-<p>All are free to contribute to this app.</p>
+<p>All are free to contribute to this app. Pull requests welcome.</p>
 
 <h2>Authors and Acknowledment</h2>
 
